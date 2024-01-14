@@ -1,3 +1,15 @@
+<script setup>
+import { ref } from 'vue'
+import SideBarLogin from 'src/components/SideBarLogin.vue'
+
+const rightDrawerOpen = ref(false)
+
+function toggleRightDrawer () {
+  rightDrawerOpen.value = !rightDrawerOpen.value
+}
+
+</script>
+
 <template>
   <q-layout view="hhr lpR fFr">
 
@@ -21,6 +33,7 @@
       side="right"
       elevated>
       <!-- drawer content -->
+      <SideBarLogin/>
     </q-drawer>
 
     <q-page-container>
@@ -30,25 +43,12 @@
   </q-layout>
 </template>
 
-<script>
-import { ref } from 'vue'
-
-export default {
-  setup () {
-    const rightDrawerOpen = ref(false)
-
-    return {
-      rightDrawerOpen,
-      toggleRightDrawer () {
-        rightDrawerOpen.value = !rightDrawerOpen.value
-      }
-    }
-  }
-}
-</script>
-
 <style>
 .q-header {
   background-color: rgb(104, 10, 122);
+}
+
+.q-drawer {
+  background-color: rgb(209, 198, 235);
 }
 </style>
