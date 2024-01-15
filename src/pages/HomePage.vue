@@ -1,9 +1,9 @@
 <template>
-  <q-page id="pagina" >
+  <q-page id="pagina">
       <img
       alt="Manager Edu logo"
       src="../assets/manager-edu-logo.svg"
-      style="width: 300px;"
+      style="width: 100%; max-width: 300px;"
     >
     <CardBoasVindas />
   </q-page>

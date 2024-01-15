@@ -43,7 +43,7 @@ function toggleRightDrawer () {
   </q-layout>
 </template>
 
-<style>
+<style scoped>
 .q-header {
   background-color: rgb(92, 2, 177);
 }

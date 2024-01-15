@@ -3,7 +3,7 @@
     <img
       alt="Quasar logo"
       src="../assets/manager-edu-logo.svg"
-      style="width: 500px; height: 500px"
+      style="width: 100%; max-width: 500px;"
     >
   </q-page>
 </template>
