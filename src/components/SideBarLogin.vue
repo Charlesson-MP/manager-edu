@@ -1,6 +1,6 @@
 <template>
   <div id="containerLogin" class="q-pa-md q-gutter-y-md">
-    <p class="text-h6">Login:</p>
+    <p class="text-h6">Login</p>
       <div id="login" class="q-gutter-y-md column" style="max-width: 300px">
         <q-input bg-color="white" v-model="usuario" color="purple" filled label="Usuário" />
       </div>
@@ -16,10 +16,13 @@
         </q-input>
       </div>
       <div id="inscSubmit" class="q-gutter-x-lg">
-          <q-btn color="purple">Login</q-btn>
+          <q-btn
+            style="background-color: #8019e0; color: white"
+            @click="logar"
+          >Login</q-btn>
           <q-btn
             id="btnNovaConta"
-            flat style="color: #a603b4"
+            flat style="color: #8019e0"
             label="Criar conta"
             to="register"
           />
@@ -33,17 +36,22 @@ const usuario = ref('')
 const senha = ref('')
 const isPwd = ref(false)
 
+function logar () {
+  alert('Ola')
+}
 </script>
 
 <style scoped>
 #containerLogin {
-  padding-top: 60px;
+  padding-top: 15px;
 }
 p {
-  color: rgb(165, 53, 165);
+  color: white;
   text-align: center;
   font-family: 'Verdana';
   font-weight: bold;
-  padding-bottom: 10px;
+  padding: 10px;
+  background-color: rgb(128, 25, 224);
+  border-radius: 10px;
 }
 </style>

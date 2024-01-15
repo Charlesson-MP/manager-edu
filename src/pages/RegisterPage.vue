@@ -23,7 +23,7 @@
 
         <q-btn
           label="Cadastrar"
-          color="purple"
+          style="color: #8019e0"
           class="full-width"
           outline
           size="lg"
@@ -55,7 +55,7 @@ function cadastrar () {
 }
 
 #tituloFormulario {
-  color: rgb(165, 53, 165);
+  color: rgb(128, 25, 224);
   text-align: center;
   font-family: 'Verdana';
   font-weight: bold;
