@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import SideBarHomePage from 'src/components/SideBarHomePage.vue'
+import SideBarLogin from 'src/components/SideBarLogin.vue'
 
 const rightDrawerOpen = ref(false)
 
@@ -33,7 +33,7 @@ function toggleRightDrawer () {
       side="right"
       elevated>
       <!-- drawer content -->
-      <SideBarHomePage/>
+      <SideBarLogin/>
     </q-drawer>
 
     <q-page-container>

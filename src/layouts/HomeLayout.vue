@@ -22,7 +22,7 @@ function toggleRightDrawer () {
           Manager Edu
         </q-toolbar-title>
 
-        <q-btn label=" LOGIN" dense flat round icon="login" @click="toggleRightDrawer" />
+        <q-btn label=" MENU" dense flat round icon="menu" @click="toggleRightDrawer" />
       </q-toolbar>
     </q-header>
 

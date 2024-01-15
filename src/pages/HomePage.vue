@@ -1,17 +1,21 @@
 <template>
-  <q-page class="flex flex-center">
-    <img
-      alt="Quasar logo"
+  <q-page id="pagina" >
+      <img
+      alt="Manager Edu logo"
       src="../assets/manager-edu-logo.svg"
-      style="width: 500px; height: 500px"
+      style="width: 300px;"
     >
+    <CardBoasVindas />
   </q-page>
 </template>
 
-<script>
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'IndexPage'
-})
+<script setup>
+import CardBoasVindas from 'src/components/CardBoasVindas.vue'
 </script>
+
+<style>
+#pagina {
+  text-align: center;
+  padding-top: 100px;
+}
+</style>

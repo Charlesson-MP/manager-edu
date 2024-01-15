@@ -19,6 +19,7 @@
           <q-btn
             style="background-color: #8019e0; color: white"
             @click="logar"
+            to="home-page"
           >Login</q-btn>
           <q-btn
             id="btnNovaConta"
